@@ -9,7 +9,7 @@ const SwamiVivekananda = () => {
         <div
             className="bg-[#f6edd8] min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
             style={{
-                backgroundImage: "url('/images/rkm.jpg')",
+                backgroundImage: "url('/images/home/rkm.jpg')",
             }}
         >
 
@@ -27,7 +27,7 @@ const SwamiVivekananda = () => {
                         <div className="overflow-hidden rounded-[30px]">
 
                             <img
-                                src="/images/Swamiji.jpg"
+                                src="/images/inspiration/Swamiji.jpg"
                                 alt="Swami Vivekananda"
                                 className="w-full md:w-[420px] h-auto object-contain grayscale hover:grayscale-0 transition duration-700"
                             />
