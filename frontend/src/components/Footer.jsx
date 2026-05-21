@@ -231,7 +231,7 @@ const Footer = () => {
           >
             <div className="relative w-full h-full overflow-hidden rounded-[24px]">
               <img
-                src="/images/report.jpg"
+                src="/images/brief-report-2023.jpg"
                 alt="RKM Narainpur"
                 className="
                   w-full
