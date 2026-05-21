@@ -59,7 +59,7 @@ const OnlineDonation = () => {
       >
 
         {/* CONTENT */}
-        <div className="relative z-10 max-w-7xl mx-auto px-4 font-bold tracking-wide">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 font-serif font-bold tracking-wide">
           {/* HERO SECTION */}
           <div
             className="
@@ -78,7 +78,7 @@ const OnlineDonation = () => {
               border-white/20
             "
             style={{
-              backgroundImage: "url('/images/donation/collage-donation.jpg')",
+              backgroundImage: "url('/images/collage-donation.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -143,11 +143,8 @@ const OnlineDonation = () => {
                     inline-flex
                     items-center
                     gap-3
-                    bg-gradient-to-r
-                    from-[#6d1111]
-                    to-[#8b1e1e]
-                    hover:from-[#560c0c]
-                    hover:to-[#6d1111]
+                    bg-sky-500
+                    hover:bg-green-500
                     text-white
                     text-lg
                     md:text-2xl
@@ -384,7 +381,7 @@ const OnlineDonation = () => {
             </div>
 
             {/* FINAL BUTTON */}
-            <div className="text-center mt-16">
+            <div className="text-center mt-17 pb-16 md:pb-15">
               <a
                 href="https://pages.razorpay.com/pl_NxCjneir2iCxfU/view"
                 target="_blank"
@@ -392,12 +389,9 @@ const OnlineDonation = () => {
                 className="
                   inline-flex
                   items-center
-                  gap-3
-                  bg-gradient-to-r
-                  from-[#6d1111]
-                  to-[#8b1e1e]
-                  hover:from-[#560c0c]
-                  hover:to-[#6d1111]
+                  gap-2
+                  bg-[#8b1e1e]
+                  hover:bg-green-500
                   text-white
                   text-lg
                   md:text-2xl
