@@ -38,7 +38,7 @@ const IntegratedRuralDevelopment = () => {
           pb-16
         "
         style={{
-          backgroundImage: "url('/images/rkm.jpg')",
+          backgroundImage: "url('/images/home/rkm.jpg')",
         }}
       >
         <Navbar />
