@@ -15,7 +15,7 @@ const Healthcare = () => {
     bg-fixed bg-cover bg-center bg-no-repeat
   "
       style={{
-        backgroundImage: "url('/images/rkm.jpg')",
+        backgroundImage: "url('/images/home/rkm.jpg')",
       }}
     >
       <Navbar />
