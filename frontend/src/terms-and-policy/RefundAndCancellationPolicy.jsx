@@ -6,7 +6,19 @@ import Footer from "../components/Footer";
 
 const RefundAndCancellationPolicy = () => {
   return (
-    <div className="w-full min-h-screen bg-[#f6f4ee]">
+    <div
+      className="
+        w-full
+        min-h-screen
+        bg-cover
+        bg-center
+        bg-no-repeat
+        bg-fixed
+      "
+      style={{
+        backgroundImage: "url('/images/home/rkm.jpg')",
+      }}
+    >
       <Navbar />
 
       {/* =====================================================
@@ -17,46 +29,30 @@ const RefundAndCancellationPolicy = () => {
         className="
           relative
           overflow-hidden
-          bg-gradient-to-r
-          from-[#0c415a]
-          via-[#124f6d]
-          to-[#8b1e1e]
-          py-24
+          py-12
           px-5
         "
       >
-        {/* OVERLAY */}
-        <div className="absolute inset-0 bg-black/20"></div>
 
         {/* CONTENT */}
-        <div className="relative z-10 max-w-5xl mx-auto text-center text-white">
+        <div className="relative z-10 max-w-5xl mx-auto text-center font-serif font-bold tracking-wide">
+
           <h1
             className="
               text-4xl
               md:text-6xl
               font-bold
               leading-tight
+              drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]
             "
           >
             Refund & Cancellation Policy
           </h1>
 
           <div className="flex justify-center mt-6">
-            <div className="w-40 h-[3px] bg-white rounded-full"></div>
+            <div className="w-40 h-[3px] bg-black rounded-full"></div>
           </div>
 
-          <p
-            className="
-              mt-8
-              text-lg
-              md:text-2xl
-              leading-relaxed
-              text-white/90
-            "
-          >
-            Please read our refund and cancellation policy carefully
-            before making any online donation.
-          </p>
         </div>
       </div>
 
@@ -64,13 +60,15 @@ const RefundAndCancellationPolicy = () => {
           MAIN CONTENT
       ===================================================== */}
 
-      <div className="max-w-6xl mx-auto px-5 md:px-10 py-16">
+      <div className="max-w-6xl mx-auto px-5 md:px-10 py-16 font-serif font-bold tracking-wide bg-[#efe2b3]/35">
+
         <div
           className="
-            bg-white
+            bg-white/85
+            backdrop-blur-md
             rounded-[40px]
-            shadow-[0_10px_40px_rgba(0,0,0,0.08)]
-            border border-[#ece5d3]
+            shadow-[0_10px_40px_rgba(0,0,0,0.18)]
+            border border-white/40
             overflow-hidden
           "
         >
@@ -78,9 +76,11 @@ const RefundAndCancellationPolicy = () => {
           <div className="h-3 bg-gradient-to-r from-[#8b1e1e] via-[#d63b45] to-[#0c415a]"></div>
 
           {/* CONTENT AREA */}
-          <div className="p-6 md:p-14 space-y-16">
+          <div className="p-6 md:p-14 space-y-16 font-serif font-bold tracking-wide bg-[#efe2b3]/35">
+
             {/* MAIN POLICY */}
             <section>
+
               <h2
                 className="
                   text-3xl
@@ -94,13 +94,15 @@ const RefundAndCancellationPolicy = () => {
               </h2>
 
               <div className="space-y-8">
+
                 {/* INTRO BOX */}
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     rounded-3xl
                     border border-[#eadfc2]
                     p-6 md:p-8
+                    shadow-md
                   "
                 >
                   <p className="text-[#111] text-[18px] md:text-[21px] leading-[2] font-semibold">
@@ -110,6 +112,7 @@ const RefundAndCancellationPolicy = () => {
                   </p>
 
                   <div className="mt-6 space-y-5 text-[#333] text-[18px] md:text-[21px] leading-[2]">
+
                     <p>
                       1. You do not indicate the purpose of the
                       donation.
@@ -124,11 +127,13 @@ const RefundAndCancellationPolicy = () => {
                       3. You do not give your PAN when donating
                       ₹ 10,000/- or above.
                     </p>
+
                   </div>
                 </div>
 
                 {/* TECHNICAL ISSUE */}
                 <div>
+
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
                     When you try to donate but due to slow internet
                     connectivity, bank server failure or technical
@@ -141,11 +146,12 @@ const RefundAndCancellationPolicy = () => {
                   <div
                     className="
                       mt-6
-                      bg-[#f8f5ef]
+                      bg-[#f8f5ef]/90
                       border-l-[6px]
                       border-[#d63b45]
                       rounded-2xl
                       p-6
+                      shadow-md
                     "
                   >
                     <p className="text-[#0c415a] font-bold text-xl md:text-2xl break-all">
@@ -158,10 +164,12 @@ const RefundAndCancellationPolicy = () => {
                       transaction.
                     </p>
                   </div>
+
                 </div>
 
                 {/* REFUND REQUEST */}
                 <div>
+
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
                     If there is any mistake while donating, and if you
                     want to refund your money back, please contact us:
@@ -170,13 +178,15 @@ const RefundAndCancellationPolicy = () => {
                   <div
                     className="
                       mt-6
-                      bg-[#f8f5ef]
+                      bg-[#f8f5ef]/90
                       rounded-3xl
                       border border-[#eadfc2]
                       p-6 md:p-8
+                      shadow-md
                     "
                   >
                     <div className="space-y-5">
+
                       <p className="text-[#111] text-[18px] md:text-[21px] leading-[2]">
                         <span className="font-bold text-[#0c415a]">
                           Email:
@@ -200,14 +210,18 @@ const RefundAndCancellationPolicy = () => {
                         three days, stating the reason for the refund.
                         We will refund back the money.
                       </p>
+
                     </div>
                   </div>
+
                 </div>
+
               </div>
             </section>
 
             {/* IMPORTANT NOTES */}
             <section>
+
               <h2
                 className="
                   text-3xl
@@ -222,13 +236,15 @@ const RefundAndCancellationPolicy = () => {
 
               <div
                 className="
-                  bg-[#f8f5ef]
+                  bg-[#f8f5ef]/90
                   rounded-3xl
                   border border-[#eadfc2]
                   p-6 md:p-8
+                  shadow-md
                 "
               >
                 <div className="space-y-6 text-[#333] text-[18px] md:text-[21px] leading-[2]">
+
                   <p>
                     1. Refund of donations will not be allowed if the
                     Section 80G Donation Receipts are already
@@ -249,9 +265,12 @@ const RefundAndCancellationPolicy = () => {
                     4. Refunds will be credited back to the original
                     credit card used for payment.
                   </p>
+
                 </div>
               </div>
+
             </section>
+
           </div>
         </div>
       </div>
