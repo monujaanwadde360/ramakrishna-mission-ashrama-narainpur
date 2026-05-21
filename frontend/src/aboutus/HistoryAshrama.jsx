@@ -42,7 +42,7 @@ const HistoryAshrama = () => {
             <section className="py-4">
                 <div className="w-full px-2 md:px-4 flex justify-center">
                     <img
-                        src="/images/mandir.jpg"
+                        src="/images/ashramhistory/mandir.jpg"
                         alt="mandir"
                         className="w-full max-w-[1300px] h-auto object-contain rounded-2xl "
                     />
