@@ -35,7 +35,7 @@ const ImportantMilestones = () => {
     <div
       className="min-h-screen bg-fixed bg-cover bg-center"
       style={{
-        backgroundImage: "url('/images/rkm.jpg')",
+        backgroundImage: "url('/images/home/rkm.jpg')",
       }}
     >
       <Navbar />
