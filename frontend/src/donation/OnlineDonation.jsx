@@ -54,7 +54,7 @@ const OnlineDonation = () => {
           md:py-10
         "
         style={{
-          backgroundImage: "url('/images/rkm.jpg')",
+          backgroundImage: "url('/images/home/rkm.jpg')",
         }}
       >
 
@@ -78,7 +78,7 @@ const OnlineDonation = () => {
               border-white/20
             "
             style={{
-              backgroundImage: "url('/images/collage-donation.jpg')",
+              backgroundImage: "url('/images/donation/collage-donation.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
