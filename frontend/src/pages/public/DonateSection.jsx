@@ -38,7 +38,7 @@ const DonateSection = () => {
           rounded-2xl
         "
         style={{
-          backgroundImage: "url('/images/collage-donation.jpg')",
+          backgroundImage: "url('/images/donation/collage-donation.jpg')",
         }}
       >
         {/* DARK OVERLAY */}
