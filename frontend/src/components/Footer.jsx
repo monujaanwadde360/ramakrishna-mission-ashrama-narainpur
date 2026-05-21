@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 import {
   Home,
@@ -29,7 +30,7 @@ const Footer = () => {
         font-serif
       "
       style={{
-        backgroundImage: "url('/images/rkm.jpg')",
+        backgroundImage: "url('/images/home/rkm.jpg')",
       }}
     >
       {/* OVERLAY */}
@@ -45,7 +46,7 @@ const Footer = () => {
 
           <div
             className="
-             bg-[#efe2b3]/35
+              bg-[#efe2b3]/35
               rounded-[32px]
               p-6
               shadow-2xl
@@ -110,26 +111,26 @@ const Footer = () => {
               <a
                 href="mailto:rkm.narainpur@gmail.com"
                 className="
-    flex gap-4 mb-4
-    p-4
-    rounded-2xl
-    bg-[#faf7f2]
-    hover:bg-[#f3ece3]
-    hover:scale-[1.02]
-    transition-all duration-300
-    cursor-pointer
-  "
+                  flex gap-4 mb-4
+                  p-4
+                  rounded-2xl
+                  bg-[#faf7f2]
+                  hover:bg-[#f3ece3]
+                  hover:scale-[1.02]
+                  transition-all duration-300
+                  cursor-pointer
+                "
               >
                 <div
                   className="
-      min-w-[58px]
-      h-[58px]
-      rounded-xl
-      bg-[#f5e6d3]
-      flex
-      items-center
-      justify-center
-    "
+                    min-w-[58px]
+                    h-[58px]
+                    rounded-xl
+                    bg-[#f5e6d3]
+                    flex
+                    items-center
+                    justify-center
+                  "
                 >
                   <Mail size={24} className="text-[#7a5a4f]" />
                 </div>
@@ -149,26 +150,26 @@ const Footer = () => {
               <a
                 href="tel:+917781252251"
                 className="
-    flex gap-4 mb-5
-    p-4
-    rounded-2xl
-    bg-[#faf7f2]
-    hover:bg-[#f3ece3]
-    hover:scale-[1.02]
-    transition-all duration-300
-    cursor-pointer
-  "
+                  flex gap-4 mb-5
+                  p-4
+                  rounded-2xl
+                  bg-[#faf7f2]
+                  hover:bg-[#f3ece3]
+                  hover:scale-[1.02]
+                  transition-all duration-300
+                  cursor-pointer
+                "
               >
                 <div
                   className="
-      min-w-[58px]
-      h-[58px]
-      rounded-xl
-      bg-[#f5e6d3]
-      flex
-      items-center
-      justify-center
-    "
+                    min-w-[58px]
+                    h-[58px]
+                    rounded-xl
+                    bg-[#f5e6d3]
+                    flex
+                    items-center
+                    justify-center
+                  "
                 >
                   <Phone size={24} className="text-[#7a5a4f]" />
                 </div>
@@ -186,9 +187,7 @@ const Footer = () => {
                 </div>
               </a>
             </div>
-
           </div>
-
 
           {/* =====================================================
               GOOGLE MAP CARD
@@ -196,7 +195,7 @@ const Footer = () => {
 
           <div
             className="
-            bg-[#efe2b3]/35
+              bg-[#efe2b3]/35
               rounded-[32px]
               overflow-hidden
               shadow-2xl
@@ -220,51 +219,50 @@ const Footer = () => {
           </div>
 
           {/* =====================================================
-    IMAGE CARD
-===================================================== */}
+              IMAGE CARD
+          ===================================================== */}
 
           <a
             href="https://narainpur.rkmm.org/Brief%20Report/Brief%20Report%202023.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="
-    block
-    bg-[#efe2b3]/35
-    rounded-[32px]
-    p-5
-    shadow-2xl
-    h-[580px]
-    border border-white/30
-    hover:-translate-y-1
-    hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)]
-    transition-all duration-500
-  "
+              block
+              bg-[#efe2b3]/35
+              rounded-[32px]
+              p-5
+              shadow-2xl
+              h-[580px]
+              border border-white/30
+              hover:-translate-y-1
+              hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)]
+              transition-all duration-500
+            "
           >
             <div className="relative w-full h-full overflow-hidden rounded-[24px] group">
 
-              {/* IMAGE */}
               <img
-                src="/images/brief-report-2023.jpg"
+                src="/images/reports/brief-report-2023.jpg"
                 alt="Brief Report 2023"
                 className="
-        w-full
-        h-full
-        object-cover
-        rounded-[24px]
-        group-hover:scale-105
-        transition-all duration-700
-      "
+                  w-full
+                  h-full
+                  object-cover
+                  rounded-[24px]
+                  group-hover:scale-105
+                  transition-all duration-700
+                "
               />
 
               {/* OVERLAY */}
               <div
                 className="
-        absolute inset-0
-        bg-gradient-to-t
-        from-black/75
-        via-black/10
-        to-transparent
-      "
+                  absolute inset-0
+                  bg-gradient-to-t
+                  from-black/75
+                  via-black/10
+                  to-transparent
+                "
               ></div>
 
               {/* CONTENT */}
@@ -283,36 +281,36 @@ const Footer = () => {
         </div>
 
         {/* =====================================================
-    TERMS & FOLLOW SECTION BELOW CARDS
-===================================================== */}
+            TERMS & FOLLOW SECTION
+        ===================================================== */}
 
         <div className="mt-10 grid md:grid-cols-2 gap-8">
 
           {/* TERMS CARD */}
           <div
             className="
-            bg-[#efe2b3]/35
-      rounded-[32px]
-      p-6
-      shadow-2xl
-      border border-white/30
-      hover:-translate-y-1
-      transition-all duration-500
-    "
+              bg-[#efe2b3]/35
+              rounded-[32px]
+              p-6
+              shadow-2xl
+              border border-white/30
+              hover:-translate-y-1
+              transition-all duration-500
+            "
           >
             <div className="flex items-start gap-4">
 
               {/* ICON */}
               <div
                 className="
-          min-w-[60px]
-          h-[60px]
-          rounded-2xl
-          bg-[#f5e6d3]
-          flex
-          items-center
-          justify-center
-        "
+                  min-w-[60px]
+                  h-[60px]
+                  rounded-2xl
+                  bg-[#f5e6d3]
+                  flex
+                  items-center
+                  justify-center
+                "
               >
                 <Newspaper size={28} className="text-[#7a5a4f]" />
               </div>
@@ -324,24 +322,52 @@ const Footer = () => {
                 </h3>
 
                 <div className="space-y-3">
-                  {[
-                    "Terms and Conditions",
-                    "Refund and Cancellation Policy",
-                    "Privacy Policy",
-                  ].map((item, index) => (
-                    <p
-                      key={index}
-                      className="
-                text-[17px]
-                hover:text-[#0c415a]
-                hover:translate-x-2
-                cursor-pointer
-                transition-all duration-300
-              "
-                    >
-                      → {item}
-                    </p>
-                  ))}
+
+                  <a
+                    href="/term-and-policy/terms-and-conditions"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      block
+                      text-[17px]
+                      hover:text-[#0c415a]
+                      hover:translate-x-2
+                      transition-all duration-300
+                    "
+                  >
+                    → Terms and Conditions
+                  </a>
+
+                  <a
+                    href="/term-and-policy/refund-cancellation-policy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      block
+                      text-[17px]
+                      hover:text-[#0c415a]
+                      hover:translate-x-2
+                      transition-all duration-300
+                    "
+                  >
+                    → Refund and Cancellation Policy
+                  </a>
+
+                  <a
+                    href="/term-and-policy/privacy-policy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="
+                      block
+                      text-[17px]
+                      hover:text-[#0c415a]
+                      hover:translate-x-2
+                      transition-all duration-300
+                    "
+                  >
+                    → Privacy Policy
+                  </a>
+
                 </div>
               </div>
             </div>
@@ -350,14 +376,14 @@ const Footer = () => {
           {/* FOLLOW US CARD */}
           <div
             className="
-            bg-[#efe2b3]/35
-      rounded-[32px]
-      p-6
-      shadow-2xl
-      border border-white/30
-      hover:-translate-y-1
-      transition-all duration-500
-    "
+              bg-[#efe2b3]/35
+              rounded-[32px]
+              p-6
+              shadow-2xl
+              border border-white/30
+              hover:-translate-y-1
+              transition-all duration-500
+            "
           >
             <h3 className="text-3xl font-bold text-[#0c415a] mb-6">
               Follow Us
@@ -370,81 +396,77 @@ const Footer = () => {
 
             <div className="flex items-center gap-5 flex-wrap">
 
-              {/* FACEBOOK */}
               <a
                 href="#"
                 className="
-          w-14 h-14
-          rounded-full
-          bg-[#1877f2]
-          text-white
-          flex items-center justify-center
-          text-xl
-          shadow-lg
-          hover:-translate-y-2
-          hover:scale-110
-          transition-all duration-300
-        "
+                  w-14 h-14
+                  rounded-full
+                  bg-[#1877f2]
+                  text-white
+                  flex items-center justify-center
+                  text-xl
+                  shadow-lg
+                  hover:-translate-y-2
+                  hover:scale-110
+                  transition-all duration-300
+                "
               >
                 <FaFacebookF />
               </a>
 
-              {/* X */}
               <a
                 href="#"
                 className="
-          w-14 h-14
-          rounded-full
-          bg-black
-          text-white
-          flex items-center justify-center
-          text-xl
-          shadow-lg
-          hover:-translate-y-2
-          hover:scale-110
-          transition-all duration-300
-        "
+                  w-14 h-14
+                  rounded-full
+                  bg-black
+                  text-white
+                  flex items-center justify-center
+                  text-xl
+                  shadow-lg
+                  hover:-translate-y-2
+                  hover:scale-110
+                  transition-all duration-300
+                "
               >
                 <FaXTwitter />
               </a>
 
-              {/* INSTAGRAM */}
               <a
                 href="#"
                 className="
-          w-14 h-14
-          rounded-full
-          bg-gradient-to-r
-          from-pink-500
-          via-red-500
-          to-yellow-500
-          text-white
-          flex items-center justify-center
-          text-xl
-          shadow-lg
-          hover:-translate-y-2
-          hover:scale-110
-          transition-all duration-300
-        "
+                  w-14 h-14
+                  rounded-full
+                  bg-gradient-to-r
+                  from-pink-500
+                  via-red-500
+                  to-yellow-500
+                  text-white
+                  flex items-center justify-center
+                  text-xl
+                  shadow-lg
+                  hover:-translate-y-2
+                  hover:scale-110
+                  transition-all duration-300
+                "
               >
                 <FaInstagram />
               </a>
 
-              {/* YOUTUBE */}
               <a
                 href="#"
                 className="
-          w-14 h-14
-          rounded-full
-          bg-red-600
-          text-white
-          flex items-center justify-center
-          text-xl
-          shadow-lg
-          hover:-translate-y-2
-          hover:scale-110
-          transition-all duration-300
-        "
+                  w-14 h-14
+                  rounded-full
+                  bg-red-600
+                  text-white
+                  flex items-center justify-center
+                  text-xl
+                  shadow-lg
+                  hover:-translate-y-2
+                  hover:scale-110
+                  transition-all duration-300
+                "
               >
                 <FaYoutube />
               </a>
