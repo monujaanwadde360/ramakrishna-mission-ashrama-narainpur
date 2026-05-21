@@ -114,16 +114,20 @@ const ReachAndTimings = () => {
                   className="
                     w-24 h-24
                     mx-auto mb-8
-                    rounded-full
-                    bg-[#f8f1d7]
-                    flex items-center justify-center
-                    group-hover:scale-110
-                    transition-all duration-300
+                    bg-[#8b1e1e]
+                    text-white
+                    flex
+                   items-center
+                   justify-center
+                  text-4xl
+                  shadow-lg
+                  group-hover:scale-110
+                  transition duration-500
                   "
                 >
                   <Icon
                     size={42}
-                    className="text-[#0c415a]"
+                    className="text-white"
                     strokeWidth={2.2}
                   />
                 </div>
