@@ -6,7 +6,19 @@ import Footer from "../components/Footer";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="w-full min-h-screen bg-[#f6f4ee]">
+    <div
+      className="
+        w-full
+        min-h-screen
+        bg-cover
+        bg-center
+        bg-no-repeat
+        bg-fixed
+      "
+      style={{
+        backgroundImage: "url('/images/home/rkm.jpg')",
+      }}
+    >
       <Navbar />
 
       {/* =====================================================
@@ -17,47 +29,30 @@ const PrivacyPolicy = () => {
         className="
           relative
           overflow-hidden
-          bg-gradient-to-r
-          from-[#0c415a]
-          via-[#124f6d]
-          to-[#8b1e1e]
-          py-24
+          py-12
           px-5
         "
       >
-        {/* OVERLAY */}
-        <div className="absolute inset-0 bg-black/20"></div>
 
         {/* CONTENT */}
-        <div className="relative z-10 max-w-5xl mx-auto text-center text-white">
+        <div className="relative z-10 max-w-5xl mx-auto text-center font-serif font-bold tracking-wide">
+
           <h1
             className="
               text-4xl
               md:text-6xl
               font-bold
               leading-tight
+              drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]
             "
           >
             Privacy Policy
           </h1>
 
           <div className="flex justify-center mt-6">
-            <div className="w-40 h-[3px] bg-white rounded-full"></div>
+            <div className="w-40 h-[3px] bg-black rounded-full"></div>
           </div>
 
-          <p
-            className="
-              mt-8
-              text-lg
-              md:text-2xl
-              leading-relaxed
-              text-white/90
-            "
-          >
-            Your privacy and personal information are important to us.
-            Please read this policy carefully to understand how we
-            collect, use and protect your information.
-          </p>
         </div>
       </div>
 
@@ -65,13 +60,15 @@ const PrivacyPolicy = () => {
           MAIN CONTENT
       ===================================================== */}
 
-      <div className="max-w-6xl mx-auto px-5 md:px-10 py-16">
+      <div className="max-w-6xl mx-auto px-5 md:px-10 py-16 font-serif font-bold tracking-wide bg-[#efe2b3]/35">
+
         <div
           className="
-            bg-white
+            bg-white/85
+            backdrop-blur-md
             rounded-[40px]
-            shadow-[0_10px_40px_rgba(0,0,0,0.08)]
-            border border-[#ece5d3]
+            shadow-[0_10px_40px_rgba(0,0,0,0.18)]
+            border border-white/40
             overflow-hidden
           "
         >
@@ -79,7 +76,8 @@ const PrivacyPolicy = () => {
           <div className="h-3 bg-gradient-to-r from-[#8b1e1e] via-[#d63b45] to-[#0c415a]"></div>
 
           {/* CONTENT */}
-          <div className="p-6 md:p-14 space-y-16">
+          <div className="p-6 md:p-14 space-y-16 bg-[#efe2b3]/35 font-serif font-bold tracking-wide">
+
             {/* INTRODUCTION */}
             <section>
               <h2
@@ -96,10 +94,11 @@ const PrivacyPolicy = () => {
 
               <div
                 className="
-                  bg-[#f8f5ef]
+                  bg-[#f8f5ef]/90
                   rounded-3xl
                   border border-[#eadfc2]
                   p-6 md:p-8
+                  shadow-md
                 "
               >
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -135,13 +134,15 @@ const PrivacyPolicy = () => {
               </h2>
 
               <div className="space-y-8">
+
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     border-l-[6px]
                     border-[#d63b45]
                     rounded-2xl
                     p-6 md:p-8
+                    shadow-md
                   "
                 >
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -186,10 +187,11 @@ const PrivacyPolicy = () => {
 
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     rounded-3xl
                     border border-[#eadfc2]
                     p-6 md:p-8
+                    shadow-md
                   "
                 >
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -204,6 +206,7 @@ const PrivacyPolicy = () => {
                     this way.
                   </p>
                 </div>
+
               </div>
             </section>
 
@@ -222,6 +225,7 @@ const PrivacyPolicy = () => {
               </h2>
 
               <div className="space-y-8">
+
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
                   Needless to add, all Information collected shall only
                   be used internally within Ramakrishna Math and
@@ -239,11 +243,12 @@ const PrivacyPolicy = () => {
 
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     border-l-[6px]
                     border-[#0c415a]
                     rounded-2xl
                     p-6 md:p-8
+                    shadow-md
                   "
                 >
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -259,6 +264,7 @@ const PrivacyPolicy = () => {
                     companies for marketing or commercial purposes.
                   </p>
                 </div>
+
               </div>
             </section>
 
@@ -278,10 +284,11 @@ const PrivacyPolicy = () => {
 
               <div
                 className="
-                  bg-[#f8f5ef]
+                  bg-[#f8f5ef]/90
                   rounded-3xl
                   border border-[#eadfc2]
                   p-6 md:p-8
+                  shadow-md
                 "
               >
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -291,18 +298,12 @@ const PrivacyPolicy = () => {
                 </p>
 
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2] mt-6">
-                  You do this through your browser (like Internet
-                  Explorer or Firefox or Safari or Chrome) settings.
-                  Each browser is a little different, so look at your
-                  browser Help menu to learn the correct way to modify
-                  your cookie settings.
+                  You do this through your browser settings.
                 </p>
 
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2] mt-6">
-                  If you turn cookies off, you won’t have access to
-                  many features that make your site experience more
-                  efficient and some of our services will not function
-                  properly.
+                  If you turn cookies off, some of our services will not
+                  function properly.
                 </p>
               </div>
             </section>
@@ -322,30 +323,20 @@ const PrivacyPolicy = () => {
               </h2>
 
               <div className="space-y-8">
+
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     rounded-3xl
                     border border-[#eadfc2]
                     p-6 md:p-8
+                    shadow-md
                   "
                 >
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
                     The statistical and personally identifying
-                    information received by Ramakrishna Math as a result
-                    of a visitor’s use of Ramakrishna Math website will
-                    be gathered by Ramakrishna Math solely for internal
-                    purposes, such as helping Ramakrishna Math
-                    understand how often its websites are accessed and
-                    how they might be improved.
-                  </p>
-
-                  <p className="text-[#333] text-[18px] md:text-[21px] leading-[2] mt-6">
-                    None of the statistical, non–personally identifying
-                    information collected by Ramakrishna Math will be
-                    used by Ramakrishna Math to identify a visitor or be
-                    linked to any personally identifying information
-                    about the visitor.
+                    information received by Ramakrishna Math will be
+                    gathered solely for internal purposes.
                   </p>
 
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2] mt-6">
@@ -357,53 +348,38 @@ const PrivacyPolicy = () => {
 
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     border-l-[6px]
                     border-[#d63b45]
                     rounded-2xl
                     p-6 md:p-8
+                    shadow-md
                   "
                 >
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
                     To prevent unauthorized access, maintain data
                     accuracy, and ensure correct use of information, we
-                    will employ reasonable and current Internet security
+                    employ reasonable and current Internet security
                     methods and technologies.
                   </p>
                 </div>
 
-                <div>
-                  <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
-                    Credit card Transactions processed are through a
-                    Bank Hosted Page and SSL (Secured Sockets Layer)
-                    technology is used to encrypt your personal
-                    information when you affirmatively respond to a
-                    Provider’s offer and authorize us to transmit your
-                    personal information to a Provider for fulfillment.
+                <div
+                  className="
+                    mt-8
+                    bg-[#0c415a]
+                    text-white
+                    rounded-3xl
+                    p-6 md:p-8
+                    shadow-lg
+                  "
+                >
+                  <p className="text-[18px] md:text-[22px] font-semibold leading-[2]">
+                    We never store your credit card/bank related
+                    information on our site.
                   </p>
-
-                  <p className="text-[#333] text-[18px] md:text-[21px] leading-[2] mt-6">
-                    Please note that a Provider may employ security
-                    methods and technologies that differ from ours, and
-                    we encourage you to read that policy before
-                    responding to a Provider’s offer.
-                  </p>
-
-                  <div
-                    className="
-                      mt-8
-                      bg-[#0c415a]
-                      text-white
-                      rounded-3xl
-                      p-6 md:p-8
-                    "
-                  >
-                    <p className="text-[18px] md:text-[22px] font-semibold leading-[2]">
-                      We never store your credit card/bank related
-                      information on our site.
-                    </p>
-                  </div>
                 </div>
+
               </div>
             </section>
 
@@ -423,16 +399,16 @@ const PrivacyPolicy = () => {
 
               <div
                 className="
-                  bg-[#f8f5ef]
+                  bg-[#f8f5ef]/90
                   rounded-3xl
                   border border-[#eadfc2]
                   p-6 md:p-8
+                  shadow-md
                 "
               >
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
                   Any changes to our Privacy Policy will be communicated
-                  through our Site at least 10 days in advance of
-                  implementation.
+                  through our Site before implementation.
                 </p>
 
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2] mt-6">
@@ -440,31 +416,8 @@ const PrivacyPolicy = () => {
                   secured according to the previous Privacy Policy.
                 </p>
               </div>
-            </section>
+            </section>    
 
-            {/* TERMS LINK */}
-            <section>
-              <div
-                className="
-                  bg-gradient-to-r
-                  from-[#0c415a]
-                  to-[#8b1e1e]
-                  rounded-3xl
-                  p-8 md:p-10
-                  text-white
-                "
-              >
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Additional Information
-                </h2>
-
-                <p className="text-[18px] md:text-[21px] leading-[2] text-white/90">
-                  Please also visit our Terms and Conditions section
-                  that explains other terms governing the use of this
-                  Site.
-                </p>
-              </div>
-            </section>
           </div>
         </div>
       </div>
