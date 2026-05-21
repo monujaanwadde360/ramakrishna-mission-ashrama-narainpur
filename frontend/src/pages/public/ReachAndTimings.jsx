@@ -114,6 +114,7 @@ const ReachAndTimings = () => {
                   className="
                     w-24 h-24
                     mx-auto mb-8
+                   rounded-full
                     bg-[#8b1e1e]
                     text-white
                     flex
