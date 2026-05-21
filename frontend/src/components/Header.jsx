@@ -14,7 +14,7 @@ const Header = () => {
 
       <div className="flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32">
         <img
-          src="/images/logo.png"
+          src="/images/home/logo.png"
           alt="Logo"
           className="w-full h-full object-contain 
     drop-shadow-[0_0_2px_rgba(255,255,255,124)]
