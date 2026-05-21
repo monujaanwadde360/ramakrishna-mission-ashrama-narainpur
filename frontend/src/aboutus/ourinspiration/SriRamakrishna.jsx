@@ -10,7 +10,7 @@ const SriRamakrishna = () => {
     <div
       className="bg-[#f6edd8] min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
       style={{
-        backgroundImage: "url('/images/rkm.jpg')",
+        backgroundImage: "url('/images/home/rkm.jpg')",
       }}
     >
 
@@ -28,7 +28,7 @@ const SriRamakrishna = () => {
             <div className="overflow-hidden rounded-[30px]">
 
               <img
-                src="/images/Thakur.jpg"
+                src="/images/inspiration/Thakur.jpg"
                 alt="Sri Ramakrishna"
                 className="w-full md:w-[420px] h-auto object-contain grayscale hover:grayscale-0 transition duration-700"
               />
