@@ -78,7 +78,7 @@ const OnlineDonation = () => {
               border-white/20
             "
             style={{
-              backgroundImage: "url('/images/collage-donation.jpg')",
+              backgroundImage: "url('/images/donation/collage-donation.jpg')",
               backgroundSize: "cover",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
