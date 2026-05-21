@@ -3,19 +3,19 @@
 export const inspirations = [
   {
     name: "Sri Ramakrishna",
-    image: "/images/Thakur.jpg",
+    image: "/images/inspiration/Thakur.jpg",
     path: "/aboutus/ourinspiration/ramakrishna",
   },
 
   {
     name: "Sri Sarada Devi",
-    image: "/images/Maa.jpg",
+    image: "/images/inspiration/Maa.jpg",
     path: "/aboutus/ourinspiration/sarada-devi",
   },
 
   {
     name: "Swami Vivekananda",
-    image: "/images/Swamiji.jpg",
+    image: "/images/inspiration/Swamiji.jpg",
     path: "/aboutus/ourinspiration/vivekananda",
   },
 ];
