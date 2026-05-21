@@ -14,6 +14,12 @@ import {
   sportsData,
 } from "../data/educationData";
 
+import {
+  FaFlask,
+  FaChild,
+  FaLaptopCode,
+} from "react-icons/fa";
+
 import ScrollToTop from "../components/ScrollToTop";
 
 const Education = () => {
@@ -76,7 +82,7 @@ const Education = () => {
           <div className="relative overflow-hidden rounded-2xl shadow-2xl">
 
             <img
-              src="/images/banner/banner2.jpg"
+              src="/images/banner/banner1.jpg"
               alt="Campus"
               className="
                 w-full
@@ -352,23 +358,25 @@ const Education = () => {
 
         </div>
 
+
         {/* ================= EXTRA FACILITIES ================= */}
 
-        <div className="mt-14 font-serif font-bold tracking-wide ">
 
-          <div className="text-center mb-10">
+        <div className="mt-14 font-serif font-bold tracking-wide">
+
+          <div className="text-center mb-12">
 
             <h2
               className="
-                text-3xl md:text-5xl
-                text-[#2c4a5a]
-              "
+        text-3xl md:text-5xl
+        text-[#2c4a5a]
+      "
             >
               Additional Educational Facilities
             </h2>
 
-            <div className="flex justify-center mt-4 bg-[#efe2b3]/35 w-max mx-auto px-4 py-1 rounded-full">
-              <div className="w-32 h-[3px] bg-[#8b1e1e]" />
+            <div className="flex justify-center mt-5">
+              <div className="w-40 h-[3px] bg-[#8b1e1e]" />
             </div>
 
           </div>
@@ -377,64 +385,107 @@ const Education = () => {
 
             {[
               {
-                icon: "🔬",
+                icon: <FaFlask />,
                 title: "Science Playground",
                 text:
                   "The Ashrama provides a science playground that creates an enthusiastic learning experience and encourages creativity.",
               },
 
               {
-                icon: "🎨",
+                icon: <FaChild />,
                 title: "Play School",
                 text:
                   "The Play School helps in building the physical, cognitive and emotional strength of children.",
               },
 
               {
-                icon: "💻",
+                icon: <FaLaptopCode />,
                 title: "Computer Training Center",
                 text:
                   "The Vivekananda Computer Training Center provides modern computer education and project-based learning.",
               },
+
             ].map((item, index) => (
 
               <div
                 key={index}
                 className="
-                  bg-gradient-to-b
-                  from-[#fff7df]
-                  to-[#f3deb0]
-                  rounded-2xl
-                  shadow-xl
-                  p-8
-                  hover:-translate-y-2
-                  transition duration-300
-                "
+          relative
+          overflow-hidden
+          rounded-3xl
+          bg-gradient-to-br
+          from-[#fff8e8]
+          via-[#f7e6bd]
+          to-[#efd38d]
+          shadow-xl
+          border border-[#d7c28a]
+          p-8 md:p-10
+          transition-all duration-500
+          hover:-translate-y-3
+          hover:shadow-2xl
+          group
+        "
               >
 
-                <div className="text-5xl text-center mb-5">
-                  {item.icon}
+                {/* TOP GLOW */}
+                <div
+                  className="
+            absolute
+            -top-16
+            -right-16
+            w-40
+            h-40
+            bg-[#ffffff40]
+            rounded-full
+            blur-3xl
+          "
+                />
+
+                {/* ICON */}
+                <div className="flex justify-center mb-7">
+
+                  <div
+                    className="
+              w-24 h-24
+              rounded-full
+              bg-[#8b1e1e]
+              text-white
+              flex
+              items-center
+              justify-center
+              text-4xl
+              shadow-lg
+              group-hover:scale-110
+              transition duration-500
+            "
+                  >
+                    {item.icon}
+                  </div>
+
                 </div>
 
+                {/* TITLE */}
                 <h3
                   className="
-                    text-2xl
-                    font-bold
-                    text-[#0c2b35]
-                    text-center
-                    mb-5
-                  "
+            text-2xl md:text-3xl
+            text-center
+            text-[#16363b]
+            mb-5
+            leading-snug
+          "
                 >
                   {item.title}
                 </h3>
 
+                {/* TEXT */}
                 <p
                   className="
-                    text-[19px]
-                    leading-[1.9]
-                    text-[#333]
-                    text-justify
-                  "
+            text-[18px]
+            leading-[1.9]
+            text-[#2b2b2b]
+            text-justify
+            font-medium
+          "
                 >
                   {item.text}
                 </p>
@@ -793,7 +844,7 @@ const Education = () => {
         </div>
 
       </div>
-      
+
       <Footer />
 
     </div>
