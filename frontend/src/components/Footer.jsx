@@ -284,91 +284,58 @@ const Footer = () => {
             TERMS & FOLLOW SECTION
         ===================================================== */}
 
-        <div className="mt-10 grid md:grid-cols-2 gap-8">
+        {/* TERMS */}
+        <div className="mt-10 pt-8 border-t border-[#c9b27b]">
+          <div className="flex gap-5">
 
-          {/* TERMS CARD */}
-          <div
-            className="
-              bg-[#efe2b3]/35
-              rounded-[32px]
-              p-6
-              shadow-2xl
-              border border-white/30
-              hover:-translate-y-1
-              transition-all duration-500
-            "
-          >
-            <div className="flex items-start gap-4">
+            <Newspaper className="text-[#7a5a4f] text-[42px] shrink-0" />
 
-              {/* ICON */}
-              <div
-                className="
-                  min-w-[60px]
-                  h-[60px]
-                  rounded-2xl
-                  bg-[#f5e6d3]
-                  flex
-                  items-center
-                  justify-center
-                "
-              >
-                <Newspaper size={28} className="text-[#7a5a4f]" />
-              </div>
+            <div>
+              <h3 className="text-[24px] font-bold text-[#0c415a] mb-4">
+                Terms and Policy
+              </h3>
 
-              {/* CONTENT */}
-              <div className="w-full">
-                <h3 className="text-3xl font-bold text-[#0c415a] mb-4">
-                  Terms & Policy
-                </h3>
+              <div className="space-y-3 text-[17px]">
 
-                <div className="space-y-3">
+                <Link
+                  to="/term-and-policy/terms-and-conditions"
+                  className="
+            block
+            text-black
+            hover:text-[#0c415a]
+            hover:translate-x-2
+            transition-all duration-300
+          "
+                >
+                  → Terms and Conditions
+                </Link>
 
-                  <a
-                    href="/term-and-policy/terms-and-conditions"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      block
-                      text-[17px]
-                      hover:text-[#0c415a]
-                      hover:translate-x-2
-                      transition-all duration-300
-                    "
-                  >
-                    → Terms and Conditions
-                  </a>
+                <Link
+                  to="/term-and-policy/refund-cancellation-policy"
+                  className="
+            block
+            text-black
+            hover:text-[#0c415a]
+            hover:translate-x-2
+            transition-all duration-300
+          "
+                >
+                  → Refund and Cancellation Policy
+                </Link>
 
-                  <a
-                    href="/term-and-policy/refund-cancellation-policy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      block
-                      text-[17px]
-                      hover:text-[#0c415a]
-                      hover:translate-x-2
-                      transition-all duration-300
-                    "
-                  >
-                    → Refund and Cancellation Policy
-                  </a>
+                <Link
+                  to="/term-and-policy/privacy-policy"
+                  className="
+            block
+            text-black
+            hover:text-[#0c415a]
+            hover:translate-x-2
+            transition-all duration-300
+          "
+                >
+                  → Privacy Policy
+                </Link>
 
-                  <a
-                    href="/term-and-policy/privacy-policy"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="
-                      block
-                      text-[17px]
-                      hover:text-[#0c415a]
-                      hover:translate-x-2
-                      transition-all duration-300
-                    "
-                  >
-                    → Privacy Policy
-                  </a>
-
-                </div>
               </div>
             </div>
           </div>
