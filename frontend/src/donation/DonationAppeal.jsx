@@ -17,7 +17,7 @@ const DonationAppeal = () => {
     bg-no-repeat
   "
       style={{
-        backgroundImage: "url('/images/rkm.jpg')",
+        backgroundImage: "url('/images/home/rkm.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
