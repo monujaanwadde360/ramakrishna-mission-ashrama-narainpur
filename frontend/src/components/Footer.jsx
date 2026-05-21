@@ -107,26 +107,29 @@ const Footer = () => {
               </div>
 
               {/* EMAIL */}
-              <div
+              <a
+                href="mailto:rkm.narainpur@gmail.com"
                 className="
-                  flex gap-4 mb-4
-                  p-4
-                  rounded-2xl
-                  bg-[#faf7f2]
-                  hover:bg-[#f3ece3]
-                  transition-all
-                "
+    flex gap-4 mb-4
+    p-4
+    rounded-2xl
+    bg-[#faf7f2]
+    hover:bg-[#f3ece3]
+    hover:scale-[1.02]
+    transition-all duration-300
+    cursor-pointer
+  "
               >
                 <div
                   className="
-                    min-w-[58px]
-                    h-[58px]
-                    rounded-xl
-                    bg-[#f5e6d3]
-                    flex
-                    items-center
-                    justify-center
-                  "
+      min-w-[58px]
+      h-[58px]
+      rounded-xl
+      bg-[#f5e6d3]
+      flex
+      items-center
+      justify-center
+    "
                 >
                   <Mail size={24} className="text-[#7a5a4f]" />
                 </div>
@@ -136,33 +139,36 @@ const Footer = () => {
                     Email
                   </h4>
 
-                  <p className="text-[18px] break-all mt-1">
+                  <p className="text-[18px] break-all mt-1 text-gray-700">
                     rkm.narainpur@gmail.com
                   </p>
                 </div>
-              </div>
+              </a>
 
               {/* PHONE */}
-              <div
+              <a
+                href="tel:+917781252251"
                 className="
-                  flex gap-4 mb-5
-                  p-4
-                  rounded-2xl
-                  bg-[#faf7f2]
-                  hover:bg-[#f3ece3]
-                  transition-all
-                "
+    flex gap-4 mb-5
+    p-4
+    rounded-2xl
+    bg-[#faf7f2]
+    hover:bg-[#f3ece3]
+    hover:scale-[1.02]
+    transition-all duration-300
+    cursor-pointer
+  "
               >
                 <div
                   className="
-                    min-w-[58px]
-                    h-[58px]
-                    rounded-xl
-                    bg-[#f5e6d3]
-                    flex
-                    items-center
-                    justify-center
-                  "
+      min-w-[58px]
+      h-[58px]
+      rounded-xl
+      bg-[#f5e6d3]
+      flex
+      items-center
+      justify-center
+    "
                 >
                   <Phone size={24} className="text-[#7a5a4f]" />
                 </div>
@@ -172,13 +178,13 @@ const Footer = () => {
                     Phone
                   </h4>
 
-                  <p className="text-[18px] leading-7 mt-1">
+                  <p className="text-[18px] leading-7 mt-1 text-gray-700">
                     +91-77-81252251
                     <br />
                     +91-77-81252393
                   </p>
                 </div>
-              </div>
+              </a>
             </div>
 
           </div>
@@ -214,59 +220,66 @@ const Footer = () => {
           </div>
 
           {/* =====================================================
-              IMAGE CARD
-          ===================================================== */}
+    IMAGE CARD
+===================================================== */}
 
-          <div
+          <a
+            href="https://narainpur.rkmm.org/Brief%20Report/Brief%20Report%202023.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
-              bg-[#efe2b3]/35
-              rounded-[32px]
-              p-5
-              shadow-2xl
-              h-[580px]
-              border border-white/30
-              hover:-translate-y-1
-              transition-all duration-500
-            "
+    block
+    bg-[#efe2b3]/35
+    rounded-[32px]
+    p-5
+    shadow-2xl
+    h-[580px]
+    border border-white/30
+    hover:-translate-y-1
+    hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)]
+    transition-all duration-500
+  "
           >
-            <div className="relative w-full h-full overflow-hidden rounded-[24px]">
+            <div className="relative w-full h-full overflow-hidden rounded-[24px] group">
+
+              {/* IMAGE */}
               <img
                 src="/images/brief-report-2023.jpg"
-                alt="RKM Narainpur"
+                alt="Brief Report 2023"
                 className="
-                  w-full
-                  h-full
-                  object-cover
-                  rounded-[24px]
-                  hover:scale-105
-                  transition-all duration-700
-                "
+        w-full
+        h-full
+        object-cover
+        rounded-[24px]
+        group-hover:scale-105
+        transition-all duration-700
+      "
               />
 
               {/* OVERLAY */}
               <div
                 className="
-                  absolute inset-0
-                  bg-gradient-to-t
-                  from-black/70
-                  via-black/10
-                  to-transparent
-                "
+        absolute inset-0
+        bg-gradient-to-t
+        from-black/75
+        via-black/10
+        to-transparent
+      "
               ></div>
 
-              {/* TEXT */}
+              {/* CONTENT */}
               <div className="absolute bottom-0 left-0 p-6 text-white">
                 <h3 className="text-3xl font-bold mb-2">
-                  Ramakrishna Mission
+                  Brief Report 2023
                 </h3>
 
-                <p className="text-[17px] leading-7 text-white/90">
-                  Dedicated to service, education,
-                  spirituality and humanity.
+                <p className="text-[16px] leading-7 text-white/90">
+                  Click to open the official annual report
+                  in a new tab.
                 </p>
               </div>
             </div>
-          </div>
+          </a>
         </div>
 
         {/* =====================================================
