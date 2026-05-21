@@ -20,7 +20,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative w-full overflow-hidden bg-[#f3f3f3]">
+    <footer className="relative w-full overflow-hidden bg-[#f3f3f3] font-serif font-bold tracking-wide">
       {/* =====================================================
           MAIN CONTENT
       ===================================================== */}
@@ -185,13 +185,13 @@ const Footer = () => {
           FULL WIDTH BOTTOM BAR
       ===================================================== */}
 
-      <div className="w-full bg-gradient-to-r from-[#8b1e1e] via-[#d63b45] to-[#0c415a] py-5 px-6">
+      <div className="w-full bg-gradient-to-b from-[#f6c27a] to-[#c57b3a] py-5 px-6">
         <div className="max-w-[1800px] mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
-          <p className="text-white text-[18px] text-center md:text-left">
+          <p className="text-[18px] text-center md:text-left">
             © 2026 Ramakrishna Mission Ashrama, Narainpur. All Rights Reserved.
           </p>
 
-          <p className="text-white text-[18px] text-center md:text-right">
+          <p className="text-[18px] text-center md:text-right">
             Designed & Developed with dedication
           </p>
         </div>
