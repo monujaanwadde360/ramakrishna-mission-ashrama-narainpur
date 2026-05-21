@@ -11,6 +11,7 @@ import {
 
 import { faqData } from "../data/faqsData";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 const FAQsRamakrishnaOrder = () => {
   const [openIndex, setOpenIndex] = useState(0);
@@ -250,8 +251,10 @@ const FAQsRamakrishnaOrder = () => {
           )}
 
         </div>
-
       </div>
+
+      <Footer />
+
     </div>
   );
 };

@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { awardsData } from "../data/awardsData";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 const AwardsRecognition = () => {
   return (
@@ -137,6 +138,7 @@ const AwardsRecognition = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

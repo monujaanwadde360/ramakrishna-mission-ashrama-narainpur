@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { ideologyPoints } from "../data/ideologyData";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 const IdeologyVision = () => {
     return (
@@ -89,6 +90,7 @@ const IdeologyVision = () => {
                 </div>
 
             </div>
+            <Footer />
         </div>
     );
 };

@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { milestonesData } from "../data/milestonesData";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 const ImportantMilestones = () => {
   const [openYear, setOpenYear] = useState(
@@ -216,6 +217,7 @@ ${openYear === item.year
         </div>
 
       </div>
+      <Footer />
     </div>
   );
 };

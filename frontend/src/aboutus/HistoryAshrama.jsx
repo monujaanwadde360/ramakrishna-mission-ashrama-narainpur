@@ -3,6 +3,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
@@ -283,6 +284,8 @@ const HistoryAshrama = () => {
                 </div>
 
             </section>
+
+            <Footer />
 
         </div>
     );

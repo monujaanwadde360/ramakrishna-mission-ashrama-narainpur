@@ -2,6 +2,8 @@
 
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
@@ -791,6 +793,8 @@ const Education = () => {
         </div>
 
       </div>
+      
+      <Footer />
 
     </div>
   );

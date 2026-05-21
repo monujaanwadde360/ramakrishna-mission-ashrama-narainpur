@@ -4,16 +4,16 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { healthcareData } from "../data/healthcareData";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 const Healthcare = () => {
   return (
     <div
       className="
-        min-h-screen
-        bg-[#f5f5f0]
-        bg-fixed bg-cover bg-center bg-no-repeat
-        pb-16
-      "
+    w-full
+    bg-[#f5f5f0]
+    bg-fixed bg-cover bg-center bg-no-repeat
+  "
       style={{
         backgroundImage: "url('/images/rkm.jpg')",
       }}
@@ -29,9 +29,9 @@ const Healthcare = () => {
 
           <h1
             className="
-        text-4xl md:text-6xl
-        text-[#0a2230]
-      "
+              text-4xl md:text-6xl
+              text-[#0a2230]
+            "
           >
             Health Care
           </h1>
@@ -45,20 +45,20 @@ const Healthcare = () => {
         {/* IMAGE */}
         <div
           className="
-      relative
-      overflow-hidden
-      shadow-xl
-    "
+            relative
+            overflow-hidden
+            shadow-xl
+          "
         >
 
           <img
             src="/images/healthcare/healthcare.jpg"
             alt="Healthcare"
             className="
-        w-full
-        h-[240px] md:h-[520px]
-        object-cover
-      "
+              w-full
+              h-[240px] md:h-[520px]
+              object-cover
+            "
           />
 
         </div>
@@ -73,7 +73,8 @@ const Healthcare = () => {
             text-[18px] md:text-[25px]
             leading-[1.9]
             text-center
-          font-serif font-bold tracking-wide"
+            font-serif font-bold tracking-wide
+          "
         >
           The Ramakrishna Mission has been providing healthcare
           services to tribal and rural communities through
@@ -96,7 +97,8 @@ const Healthcare = () => {
                 text-3xl md:text-[52px]
                 text-center
                 leading-tight
-              font-serif font-bold tracking-wide"
+                font-serif font-bold tracking-wide
+              "
             >
               {item.title}
             </h2>
@@ -105,7 +107,15 @@ const Healthcare = () => {
             <div className="mt-4 mb-10 h-[1px] bg-red-400/70" />
 
             {/* SECTION */}
-            <div className="overflow-hidden bg-[#efe2b3]/35">
+            <div
+              className="
+                bg-[#efe2b3]/35
+                p-4 md:p-6
+                after:content-['']
+                after:block
+                after:clear-both
+              "
+            >
 
               {/* IMAGE */}
               <img
@@ -125,12 +135,13 @@ const Healthcare = () => {
                 `}
               />
 
-              {/* ================= COMMON TEXT STYLE ================= */}
+              {/* TEXT */}
               <div
                 className="
                   text-[18px] md:text-[25px]
                   leading-[2]
-                font-serif font-bold tracking-wide"
+                  font-serif font-bold tracking-wide
+                "
               >
 
                 {/* SECTION 1 */}
@@ -191,7 +202,7 @@ const Healthcare = () => {
                     {/* TABLE */}
                     <div className="overflow-x-auto mt-8 bg-[#efe2b3]/35 p-4 rounded-lg shadow-md">
 
-                      <table className="w-full border-collapse text-[18px] md:text-[23px] ">
+                      <table className="w-full border-collapse text-[18px] md:text-[23px]">
 
                         <thead>
 
@@ -337,6 +348,8 @@ const Healthcare = () => {
         ))}
 
       </div>
+
+      <Footer />
 
     </div>
   );
