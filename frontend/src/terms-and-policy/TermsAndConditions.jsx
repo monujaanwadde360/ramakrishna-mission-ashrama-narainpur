@@ -6,7 +6,19 @@ import Footer from "../components/Footer";
 
 const TermsAndConditions = () => {
   return (
-    <div className="w-full min-h-screen bg-[#f6f4ee]">
+    <div
+      className="
+        w-full
+        min-h-screen
+        bg-cover
+        bg-center
+        bg-no-repeat
+        bg-fixed
+      "
+      style={{
+        backgroundImage: "url('/images/home/rkm.jpg')",
+      }}
+    >
       <Navbar />
 
       {/* =====================================================
@@ -17,47 +29,28 @@ const TermsAndConditions = () => {
         className="
           relative
           overflow-hidden
-          bg-gradient-to-r
-          from-[#0c415a]
-          via-[#124f6d]
-          to-[#8b1e1e]
-          py-24
+          py-12
           px-5
         "
       >
-        {/* OVERLAY */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        {/* DARK OVERLAY */}
+        <div className="absolute inset-0"></div>
 
         {/* CONTENT */}
-        <div className="relative z-10 max-w-5xl mx-auto text-center text-white">
+        <div className="relative z-10 max-w-5xl mx-auto text-center font-serif font-bold tracking-wide">
           <h1
             className="
               text-4xl
               md:text-6xl
-              font-bold
-              leading-tight
+              drop-shadow-[0_5px_15px_rgba(0,0,0,0.5)]
             "
           >
             Terms & Conditions
           </h1>
 
           <div className="flex justify-center mt-6">
-            <div className="w-40 h-[3px] bg-white rounded-full"></div>
+            <div className="w-40 h-[3px] bg-black rounded-full"></div>
           </div>
-
-          <p
-            className="
-              mt-8
-              text-lg
-              md:text-2xl
-              leading-relaxed
-              text-white/90
-            "
-          >
-            Please read these terms and conditions carefully before using
-            the services and website of Ramakrishna Mission Ashrama,
-            Narainpur.
-          </p>
         </div>
       </div>
 
@@ -65,13 +58,14 @@ const TermsAndConditions = () => {
           MAIN CONTENT
       ===================================================== */}
 
-      <div className="max-w-6xl mx-auto px-5 md:px-10 py-16">
+      <div className="max-w-6xl mx-auto px-5 md:px-10 py-16 font-serif font-bold tracking-wide bg-[#efe2b3]/35">
+
         <div
           className="
-            bg-white
+
             rounded-[40px]
-            shadow-[0_10px_40px_rgba(0,0,0,0.08)]
-            border border-[#ece5d3]
+            shadow-[0_10px_40px_rgba(0,0,0,0.18)]
+            border border-white/40
             overflow-hidden
           "
         >
@@ -80,6 +74,7 @@ const TermsAndConditions = () => {
 
           {/* CONTENT AREA */}
           <div className="p-6 md:p-14 space-y-16">
+
             {/* INTRO */}
             <section>
               <h2
@@ -194,13 +189,15 @@ const TermsAndConditions = () => {
               </h2>
 
               <div className="space-y-8">
+
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     border-l-[6px]
                     border-[#d63b45]
                     rounded-2xl
                     p-6
+                    shadow-md
                   "
                 >
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -216,11 +213,12 @@ const TermsAndConditions = () => {
 
                 <div
                   className="
-                    bg-[#f8f5ef]
+                    bg-[#f8f5ef]/90
                     border-l-[6px]
                     border-[#0c415a]
                     rounded-2xl
                     p-6
+                    shadow-md
                   "
                 >
                   <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -232,6 +230,7 @@ const TermsAndConditions = () => {
                     rkm.narainpur@gmail.com
                   </p>
                 </div>
+
               </div>
             </section>
 
@@ -300,10 +299,11 @@ const TermsAndConditions = () => {
 
               <div
                 className="
-                  bg-[#f8f5ef]
+                  bg-[#f8f5ef]/90
                   rounded-3xl
                   border border-[#eadfc2]
                   p-6 md:p-8
+                  shadow-md
                 "
               >
                 <p className="text-[#333] text-[18px] md:text-[21px] leading-[2]">
@@ -333,6 +333,7 @@ const TermsAndConditions = () => {
                 </p>
               </div>
             </section>
+
           </div>
         </div>
       </div>
