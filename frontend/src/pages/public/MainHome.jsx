@@ -10,8 +10,8 @@ import ReachAndTimings from "./ReachAndTimings";
 import Footer from "../../components/Footer";
 
 const images = [
-  "/images/banner1.jpg",
-  "/images/banner2.jpg",
+  "/images/banner/banner1.jpg",
+  "/images/banner/banner2.jpg",
 ];
 
 const MainHome = () => {
@@ -54,7 +54,7 @@ const MainHome = () => {
     <div
       className="bg-[#f6edd8] min-h-screen bg-cover bg-center bg-fixed"
       style={{
-        backgroundImage: "url('/images/rkm.jpg')",
+        backgroundImage: "url('/images/home/rkm.jpg')",
       }}
     >
       {/* NAVBAR */}
