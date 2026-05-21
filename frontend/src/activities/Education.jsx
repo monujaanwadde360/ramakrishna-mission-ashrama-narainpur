@@ -38,7 +38,7 @@ const Education = () => {
         bg-fixed
       "
       style={{
-        backgroundImage: "url('/images/rkm.jpg')",
+        backgroundImage: "url('/images/home/rkm.jpg')",
       }}
     >
       <Navbar />
@@ -76,7 +76,7 @@ const Education = () => {
           <div className="relative overflow-hidden rounded-2xl shadow-2xl">
 
             <img
-              src="/images/banner2.jpg"
+              src="/images/banner/banner2.jpg"
               alt="Campus"
               className="
                 w-full
