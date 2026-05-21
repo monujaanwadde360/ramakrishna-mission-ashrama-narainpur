@@ -21,7 +21,7 @@ const FCDonation = () => {
           px-5
         "
         style={{
-          backgroundImage: "url('/images/rkm.jpg')",
+          backgroundImage: "url('/images/home/rkm.jpg')",
         }}
       >
         {/* CONTAINER */}
