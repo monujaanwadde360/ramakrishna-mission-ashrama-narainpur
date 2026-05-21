@@ -9,21 +9,21 @@ import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 
 const galleryImages = [
-    "/images/history5.jpg",
-    "/images/history6.jpg",
-    "/images/history7.jpg",
-    "/images/history8.jpg",
-    "/images/history9.jpg",
-    "/images/history10.jpg",
-    "/images/history11.jpg",
-    "/images/history12.jpg",
-    "/images/history13.jpg",
-    "/images/history14.jpg",
-    "/images/history15.jpg",
-    "/images/history16.jpg",
-    "/images/history17.jpg",
-    "/images/history18.jpg",
-    "/images/history19.jpg",
+    "/images/ashramhistory/history5.jpg",
+    "/images/ashramhistory/history6.jpg",
+    "/images/ashramhistory/history7.jpg",
+    "/images/ashramhistory/history8.jpg",
+    "/images/ashramhistory/history9.jpg",
+    "/images/ashramhistory/history10.jpg",
+    "/images/ashramhistory/history11.jpg",
+    "/images/ashramhistory/history12.jpg",
+    "/images/ashramhistory/history13.jpg",
+    "/images/ashramhistory/history14.jpg",
+    "/images/ashramhistory/history15.jpg",
+    "/images/ashramhistory/history16.jpg",
+    "/images/ashramhistory/history17.jpg",
+    "/images/ashramhistory/history18.jpg",
+    "/images/ashramhistory/history19.jpg",
 ];
 
 const HistoryAshrama = () => {
@@ -31,7 +31,7 @@ const HistoryAshrama = () => {
         <div
             className="min-h-screen bg-fixed bg-cover bg-center bg-no-repeat"
             style={{
-                backgroundImage: "url('/images/rkm.jpg')",
+                backgroundImage: "url('/images/home/rkm.jpg')",
             }}
         >
 
@@ -72,7 +72,7 @@ const HistoryAshrama = () => {
                     <div className="border-b border-gray-300 pb-14 mb-14 overflow-hidden font-serif font-bold tracking-wide bg-[#efe2b3]/35">
 
                         <img
-                            src="/images/history1.jpg"
+                            src="/images/ashramhistory/history1.jpg"
                             alt="History"
                             className="w-full md:w-[520px] md:float-left md:mr-8 mb-6 rounded-2xl shadow-lg"
                         />
@@ -109,7 +109,7 @@ const HistoryAshrama = () => {
                     <div className="border-b border-gray-300 pb-14 mb-14 overflow-hidden font-serif font-bold tracking-wide bg-[#efe2b3]/35">
 
                         <img
-                            src="/images/history2.jpg"
+                            src="/images/ashramhistory/history2.jpg"
                             alt="Journey"
                             className="w-full md:w-[560px] md:float-right md:ml-8 mb-6 rounded-2xl shadow-lg"
                         />
@@ -148,7 +148,7 @@ const HistoryAshrama = () => {
                     <div className="border-b border-gray-300 pb-14 mb-14 overflow-hidden font-serif font-bold tracking-wide bg-[#efe2b3]/35">
 
                         <img
-                            src="/images/history3.jpg"
+                            src="/images/ashramhistory/history3.jpg"
                             alt="Village"
                             className="w-full md:w-[520px] md:float-left md:mr-8 mb-6 rounded-2xl shadow-lg"
                         />
@@ -188,7 +188,7 @@ const HistoryAshrama = () => {
                     <div className="border-b border-gray-300 pb-14 mb-14 overflow-hidden font-serif font-bold tracking-wide bg-[#efe2b3]/35">
 
                         <img
-                            src="/images/history4.jpg"
+                            src="/images/ashramhistory/history4.jpg"
                             alt="Children"
                             className="w-full md:w-[620px] md:float-right md:ml-8 mb-6 rounded-2xl shadow-lg"
                         />
