@@ -27,7 +27,7 @@ const AbujhmarhSection = () => {
                         {/* LEFT IMAGE */}
                         <div className="flex justify-center">
                             <img
-                                src="/images/narainpur.png"
+                                src="/images/home/narainpur.png"
                                 alt="Abujhmarh Map"
                                 className="w-full max-w-[600px]"
                             />
