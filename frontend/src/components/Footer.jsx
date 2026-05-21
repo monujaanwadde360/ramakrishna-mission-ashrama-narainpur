@@ -284,58 +284,87 @@ const Footer = () => {
             TERMS & FOLLOW SECTION
         ===================================================== */}
 
-        {/* TERMS */}
-        <div className="mt-10 pt-8 border-t border-[#c9b27b]">
-          <div className="flex gap-5">
+        <div className="mt-10 grid md:grid-cols-2 gap-8">
 
-            <Newspaper className="text-[#7a5a4f] text-[42px] shrink-0" />
+          {/* TERMS CARD */}
+          <div
+            className="
+              bg-[#efe2b3]/35
+              rounded-[32px]
+              p-6
+              shadow-2xl
+              border border-white/30
+              hover:-translate-y-1
+              transition-all duration-500
+            "
+          >
+            <div className="flex items-start gap-4">
 
-            <div>
-              <h3 className="text-[24px] font-bold text-[#0c415a] mb-4">
-                Terms and Policy
-              </h3>
+              {/* ICON */}
+              <div
+                className="
+                  min-w-[60px]
+                  h-[60px]
+                  rounded-2xl
+                  bg-[#f5e6d3]
+                  flex
+                  items-center
+                  justify-center
+                "
+              >
+                <Newspaper size={28} className="text-[#7a5a4f]" />
+              </div>
 
-              <div className="space-y-3 text-[17px]">
+              {/* CONTENT */}
+              <div className="w-full">
+                <h3 className="text-3xl font-bold text-[#0c415a] mb-4">
+                  Terms & Policy
+                </h3>
 
-                <Link
-                  to="/term-and-policy/terms-and-conditions"
-                  className="
-            block
-            text-black
-            hover:text-[#0c415a]
-            hover:translate-x-2
-            transition-all duration-300
-          "
-                >
-                  → Terms and Conditions
-                </Link>
+                <div className="space-y-3">
 
-                <Link
-                  to="/term-and-policy/refund-cancellation-policy"
-                  className="
-            block
-            text-black
-            hover:text-[#0c415a]
-            hover:translate-x-2
-            transition-all duration-300
-          "
-                >
-                  → Refund and Cancellation Policy
-                </Link>
+                  <Link
+                    to="/term-and-policy/terms-and-conditions"
+                    className="
+              block
+              text-black
+              hover:text-[#0c415a]
+              hover:translate-x-2
+              transition-all duration-300
+            "
+                  >
+                    → Terms and Conditions
+                  </Link>
 
-                <Link
-                  to="/term-and-policy/privacy-policy"
-                  className="
-            block
-            text-black
-            hover:text-[#0c415a]
-            hover:translate-x-2
-            transition-all duration-300
-          "
-                >
-                  → Privacy Policy
-                </Link>
+                  <Link
+                    to="/term-and-policy/refund-cancellation-policy"
+                    className="
+              block
+              text-[17px]
+              text-gray-800
+              hover:text-[#0c415a]
+              hover:translate-x-2
+              transition-all duration-300
+            "
+                  >
+                    → Refund and Cancellation Policy
+                  </Link>
 
+                  <Link
+                    to="/term-and-policy/privacy-policy"
+                    className="
+              block
+              text-[17px]
+              text-gray-800
+              hover:text-[#0c415a]
+              hover:translate-x-2
+              transition-all duration-300
+            "
+                  >
+                    → Privacy Policy
+                  </Link>
+
+                </div>
               </div>
             </div>
           </div>
