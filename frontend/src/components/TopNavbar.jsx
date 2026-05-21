@@ -11,26 +11,26 @@ import {
 
 import { MdEmail, MdPhone } from "react-icons/md";
 
-/* 🔥 Button Style */
+/* Button Style */
 const btnStyle =
   "bg-gradient-to-b from-[#f6c27a] to-[#c57b3a] text-[#2d1a00] px-3 h-8 rounded-xl border border-[#a15b24] font-semibold shadow-sm flex items-center transition-all duration-300 hover:shadow-md hover:brightness-105";
 
-/* 🔥 Social Container */
+/* Social Container */
 const socialContainer =
   "bg-gradient-to-b from-[#f6c27a] to-[#c57b3a] h-8 px-1.5 rounded-xl border border-[#a15b24] flex items-center gap-1";
 
-/* 🔥 Social Button */
+/* Social Button */
 const socialBtn =
   "w-7 h-7 flex items-center justify-center rounded-full transition-all duration-300 hover:bg-black/10";
 
-/* 🔥 Icon Style */
+/* Icon Style */
 const iconStyle = "text-[12px] transition-colors duration-200";
 
 const TopNavbar = () => {
   return (
     <div className="bg-[#d8c39b] border-b border-[#b08c52] px-2 py-1 text-[13px] overflow-x-auto">
 
-      {/* ✅ SINGLE LINE (NO WRAP EVER) */}
+      {/* SINGLE LINE (NO WRAP EVER) */}
       <div className="flex items-center justify-between gap-2 min-w-max">
 
         {/* LEFT */}
