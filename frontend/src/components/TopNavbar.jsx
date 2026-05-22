@@ -1,6 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { TOP_LINKS } from "../data/navbarData";
 
 import {
   FaFacebookF,
@@ -28,69 +26,94 @@ const iconStyle = "text-[12px] transition-colors duration-200";
 
 const TopNavbar = () => {
   return (
-    <div className="bg-[#d8c39b] border-b border-[#b08c52] px-2 py-1 text-[13px] overflow-x-auto">
+    <div className="bg-[#d8c39b] border-b border-[#b08c52] px-2 py-2 text-[13px]">
 
-      {/* SINGLE LINE (NO WRAP EVER) */}
-      <div className="flex items-center justify-between gap-2 min-w-max">
+      {/* RESPONSIVE CONTAINER */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
 
         {/* LEFT */}
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
 
           {/* EMAIL */}
-          <a href="mailto:rkm.narainpur@gmail.com" className={btnStyle}>
-            <MdEmail className="mr-1" />
-            <span className="hidden lg:inline">
+          <a
+            href="mailto:rkm.narainpur@gmail.com"
+            className={btnStyle}
+          >
+            <MdEmail className="mr-1 text-[15px]" />
+
+            <span className="hidden md:inline">
               rkm.narainpur@gmail.com
             </span>
           </a>
 
           {/* PHONE */}
-          <a href="tel:07781252251" className={btnStyle}>
-            <MdPhone className="mr-1" />
+          <a
+            href="tel:07781252251"
+            className={btnStyle}
+          >
+            <MdPhone className="mr-1 text-[15px]" />
+
             <span>07781-252251</span>
           </a>
 
           {/* SOCIAL */}
           <div className={socialContainer}>
 
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={socialBtn}>
-              <FaFacebookF className={`${iconStyle} hover:text-blue-700`} />
+            {/* FACEBOOK */}
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialBtn}
+            >
+              <FaFacebookF
+                className={`${iconStyle} hover:text-blue-700`}
+              />
             </a>
 
             <span className="h-4 border-r border-[#a15b24]" />
 
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className={socialBtn}>
-              <FaXTwitter className={`${iconStyle} hover:text-black`} />
+            {/* TWITTER */}
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialBtn}
+            >
+              <FaXTwitter
+                className={`${iconStyle} hover:text-black`}
+              />
             </a>
 
             <span className="h-4 border-r border-[#a15b24]" />
 
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={socialBtn}>
-              <FaInstagram className={`${iconStyle} hover:text-pink-600`} />
+            {/* INSTAGRAM */}
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialBtn}
+            >
+              <FaInstagram
+                className={`${iconStyle} hover:text-pink-600`}
+              />
             </a>
 
             <span className="h-4 border-r border-[#a15b24]" />
 
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className={socialBtn}>
-              <FaYoutube className={`${iconStyle} hover:text-red-600`} />
+            {/* YOUTUBE */}
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={socialBtn}
+            >
+              <FaYoutube
+                className={`${iconStyle} hover:text-red-600`}
+              />
             </a>
 
           </div>
-        </div>
-
-        {/* RIGHT */}
-        <div className="flex items-center divide-x divide-[#a15b24] border border-[#a15b24] rounded-xl overflow-hidden">
-
-          {TOP_LINKS.map((item, index) => (
-            <Link
-              key={item.label + index}
-              to={item.path}
-              className="px-3 h-8 flex items-center bg-gradient-to-b from-[#f6c27a] to-[#c57b3a] hover:brightness-105 transition"
-            >
-              {item.label}
-            </Link>
-          ))}
-
         </div>
       </div>
     </div>
