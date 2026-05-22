@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import AdmissionSidebar from "../components/AdmissionSidebar";
 import ScrollToTop from "../components/ScrollToTop";
+import Footer from "../components/Footer";
 
 const glowDot =
   "text-yellow-300 drop-shadow-[0_0_6px_rgba(255,215,0,0.8)] drop-shadow-[0_0_12px_rgba(255,255,0,0.6)]";
@@ -198,6 +199,9 @@ const AdmissionRules = () => {
 
         </div>
       </div>
+
+      <Footer />
+      
     </div>
   );
 };
