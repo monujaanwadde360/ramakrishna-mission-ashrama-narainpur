@@ -258,20 +258,20 @@ const Education = () => {
 
           <div
             className="
-              bg-[#efe2b3]/35
-              rounded-2xl
-              shadow-xl
-              p-6 md:p-10
-              border border-[#d7c28a]
-            "
+      bg-[#efe2b3]/35
+      rounded-2xl
+      shadow-xl
+      p-4 md:p-10
+      border border-[#d7c28a]
+    "
           >
 
             <h2
               className="
-                text-3xl md:text-5xl
-                text-[#2c4a5a]
-                text-center
-              "
+        text-3xl md:text-5xl
+        text-[#2c4a5a]
+        text-center
+      "
             >
               Student Results
             </h2>
@@ -280,7 +280,102 @@ const Education = () => {
               <div className="w-32 h-[3px] bg-[#8b1e1e]" />
             </div>
 
-            <div className="overflow-x-auto rounded-xl shadow-lg">
+            {/* ================= MOBILE VIEW ================= */}
+
+            <div className="block lg:hidden space-y-6">
+
+              {groupedData.map(([year, rows], i) => (
+
+                <div key={year}>
+
+                  {/* YEAR TITLE */}
+                  <div className="bg-[#8b1e1e] text-white text-center py-3 rounded-t-2xl">
+
+                    <h3 className="text-2xl font-bold">
+                      {year}
+                    </h3>
+
+                  </div>
+
+                  <div className="space-y-5 bg-[#f7ecd0] p-4 rounded-b-2xl">
+
+                    {rows.map((row, index) => (
+
+                      <div
+                        key={index}
+                        className="
+                  bg-white/90
+                  rounded-2xl
+                  shadow-lg
+                  border border-[#d7c28a]
+                  overflow-hidden
+                "
+                      >
+
+                        {/* CLASS HEADER */}
+                        <div className="bg-[#16363b] text-white text-center py-3">
+
+                          <h4 className="text-xl font-bold">
+                            {row.class}
+                          </h4>
+
+                        </div>
+
+                        {/* DATA */}
+                        <div className="p-4 space-y-3 text-[16px]">
+
+                          {[
+                            ["Appeared", row.appeared],
+                            ["Passed", row.passed],
+                            ["1st Division", row.first],
+                            ["2nd Division", row.second],
+                            ["3rd Division", row.third],
+                            ["Supplementary", row.suppl],
+                            ["Fail", row.fail],
+                            ["Passing %", row.percent],
+                          ].map(([label, value], idx) => (
+
+                            <div
+                              key={idx}
+                              className="
+                        flex
+                        justify-between
+                        items-center
+                        border-b
+                        border-[#d7c28a]
+                        pb-2
+                      "
+                            >
+
+                              <span className="text-[#16363b] font-semibold">
+                                {label}
+                              </span>
+
+                              <span className="text-[#8b1e1e] font-bold">
+                                {value}
+                              </span>
+
+                            </div>
+
+                          ))}
+
+                        </div>
+
+                      </div>
+
+                    ))}
+
+                  </div>
+
+                </div>
+
+              ))}
+
+            </div>
+
+            {/* ================= DESKTOP TABLE VIEW ================= */}
+
+            <div className="hidden lg:block overflow-x-auto rounded-xl shadow-lg">
 
               <table className="w-full border-collapse text-center">
 
@@ -321,10 +416,10 @@ const Education = () => {
                           <td
                             rowSpan={rows.length}
                             className="
-                              border
-                              p-4
-                              bg-[#e6c36a]
-                            "
+                      border
+                      p-4
+                      bg-[#e6c36a]
+                    "
                           >
                             {year}
                           </td>
