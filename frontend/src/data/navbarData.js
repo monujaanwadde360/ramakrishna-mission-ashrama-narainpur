@@ -1,9 +1,5 @@
 // src/data/navbarData.js
 
-export const TOP_LINKS = [
-  { label: "Admin Login", path: "/admin" },
-];
-
 /* ================= COMMON SECTION GENERATOR ================= */
 const createSections = (classNum, sections, suffix = "") =>
   sections.map((sec) => ({
