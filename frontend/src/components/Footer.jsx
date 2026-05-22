@@ -7,7 +7,6 @@ import {
   Home,
   Mail,
   Phone,
-  Newspaper,
 } from "lucide-react";
 
 import {
@@ -299,22 +298,7 @@ const Footer = () => {
             "
           >
             <div className="flex items-start gap-4">
-
-              {/* ICON */}
-              <div
-                className="
-                  min-w-[60px]
-                  h-[60px]
-                  rounded-2xl
-                  bg-[#f5e6d3]
-                  flex
-                  items-center
-                  justify-center
-                "
-              >
-                <Newspaper size={28} className="text-[#7a5a4f]" />
-              </div>
-
+              
               {/* CONTENT */}
               <div className="w-full">
                 <h3 className="text-3xl font-bold text-[#0c415a] mb-4">
